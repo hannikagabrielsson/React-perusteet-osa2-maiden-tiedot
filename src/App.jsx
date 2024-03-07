@@ -153,9 +153,6 @@ const handleFilter = (event) => {
 console.log("filterInput: " + filterInput);
 
 
-
-
-
 const api_key = import.meta.env.VITE_SOME_KEY
 // muuttujassa api_key on nyt käynnistyksessä annettu API-avaimen arvo
 
