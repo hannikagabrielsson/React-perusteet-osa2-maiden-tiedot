@@ -21,7 +21,7 @@ export const getGeocoding = async (capital) => {
             throw new Error("Capital city not provided");
         }
 
-        const API_KEY = import.meta.env.VITE_API_KEY
+        const API_KEY = import.meta.env.VITE_SOME_KEY
         const encodedCityName = encodeURIComponent(capital);
         const url = `https://api.openweathermap.org/geo/1.0/direct?q=${encodedCityName}&limit=1&appid=${API_KEY}`;
 
@@ -42,7 +42,7 @@ export const getGeocoding = async (capital) => {
 
 
 export const getWeather = async (lat, lon) => {
-    const API_KEY = import.meta.env.VITE_API_KEY;
+    const API_KEY = import.meta.env.VITE_SOME_KEY;
     console.log('API_KEY:', API_KEY);
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${API_KEY}`;
 
